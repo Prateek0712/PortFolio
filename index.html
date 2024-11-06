@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pratik Jadhav</title>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="./barStyle.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="./Images/PortfolioName.jpg" alt="Pratik" class="logo">
+            <span class="nav-links" id="sidemenu">
+                <span class="nav-link"><a href="#header">Home</a></span>
+                <span class="nav-link"><a href="#aboutMe">About</a></span>
+                <span class="nav-link"><a href="#project">Project</a></span>
+                <span class="nav-link"><a href="#skills">Skill</a></span>
+                <span class="nav-link"><a href="#education">Education</a></span>
+                <span class="nav-link"><a href="#contact">Contact</a></span>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </span> 
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <!--------------------------- HEADER SECTION ------------------------------------>
+       <div class="header" id="header">
+        <div class="container">
+           <!--<div class="navbar">
+                <img src="./Images/PortfolioName.jpg" alt="Pratik" class="logo">
+                <span class="nav-links" id="sidemenu">
+                    <span class="nav-link"><a href="#header">Home</a></span>
+                    <span class="nav-link"><a href="#aboutMe">About</a></span>
+                    <span class="nav-link"><a href="#project">Project</a></span>
+                    <span class="nav-link"><a href="#">Skill</a></span>
+                    <span class="nav-link"><a href="#contact">Contact</a></span>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </span> 
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>-->
+        <div class="header-text">
+            <p>Java Developer</p>
+            <h1>Hi, I'm <span>Pratik</span> <br><span>Jadhav</span> From Pune</h1>
+        </div>  
+        </div>    
+       </div>
+       <!--ABOUT SECTION-->
+       <div id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/UserBbgBlack.jpg" alt="User" class="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An Electronics Engineer who took a wild turn and became a <span class="personal">&lt;Java Dev/&gt;</span>  
+                        From tinkering circuits to elegant code, I love creating things that work well and look good.
+                        With a passion for creating seamless user experiences, I thrive on the intersection of technology and aesthetics. 
+                        Whether it's architecting scalable systems or fine-tuning UI components, I'm driven by a relentless pursuit
+                         of perfection. With each new project, I'm excited to merge the logical rigor of electronics with the 
+                        creative freedom of coding, resulting in innovative solutions that not only work well but also look amazing.</p>
+                </div>
+            </div>
+        </div>
+       </div>
+              <!---------------------------- PROJECT SECTION--------------------------------------->
+        <div id="project">
+                <div class="container">
+                    <h1 class="sub-title">Projects</h1>
+                    <div class="project-list">
+                        <div class="proj">
+                            <img alt="cake studio" src="./Images/mom's cake studio(AI).jpg">
+                            <div class="layer">
+                                <h3>Mom's cake studio</h3>
+                                <p>Online cake shop where user  can order cake and pay online using paypal. <br>
+                                    TechStack: Core java,  Spring Boot, MySQL, HTML, CSS, JavaScript, Oauth</p>
+                                </p>
+
+                                <a href="https://github.com/Prateek0712/Mom-s-Cake-Studio"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                        <div class="proj">
+                            <img alt="LMS" src="./Images/show buddy(AI).jpg">
+                            <div class="layer">
+                                <h3>Show buddy</h3>
+                                <p>Book your movie tickets of all new releases with easy  and simple steps<br>
+                                    TechStack: Core java,  Spring Boot, MySQL
+                                </p>
+                                    <a href="https://github.com/Prateek0712/BookMyShow"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                        <div class="proj">
+                            <img src="./Images/hotelReviewSystem(AI).jpg" alt="BlinkIt">
+                            <div class="layer">
+                                <h3>Hotel Review System</h3>
+                                <p>Now review your hotel stays with us and check ratings of hotels before selecting your next stay.<br>
+                                    TechStack: Core java, Spring boot, Micro-services, Mysql, Okta auth, spring cloud, Netflix eureka
+                                </p>
+                                <a href="https://github.com/Prateek0712/HotelReviewSystem"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                        <div class="proj">
+                            <img src="./Images/Liabrary linkup(AI).jpg" alt="BlinkIt">
+                            <div class="layer">
+                                <h3>Library linkup</h3>
+                                <p>Manage your library with us also get rid of manual emailing to student.<br>
+                                    TechStack: Core java,  Spring Boot, MySQL
+                                </p>
+                                <a href="https://github.com/Prateek0712/Library_manage_system"><button class="button-30" role="button">VISIT</button></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!----------------------------------SKILLS-------------------------------------------------->
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skillRowGrid">
+                    <div class="container-row" id="1">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="80">0%</span>
+                        </div>
+                        <span class="text">Core Java</span>
+                    </div>
+
+                    <div class="container-row" id="2">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="70">0%</span>
+                        </div>
+                        <span class="text">Spring Boot</span>
+                    </div>
+                    
+                    <div class="container-row" id="3">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="65">0%</span>
+                        </div>
+                        <span class="text">Micro-services</span>
+                    </div>
+
+                    <div class="container-row" id="4">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="60">0%</span>
+                        </div>
+                        <span class="text">DSA</span>
+                    </div>
+
+                    <div class="container-row" id="5">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="60">0%</span>
+                        </div>
+                        <span class="text">SQL</span>
+                    </div>
+
+                    <div class="container-row" id="6">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="90">0%</span>
+                        </div>
+                        <span class="text">HTML</span>
+                    </div>
+
+                    <div class="container-row" id="7">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="70">0%</span>
+                        </div>
+                        <span class="text">CSS</span>
+                    </div>
+
+                    <div class="container-row" id="8">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="70">0%</span>
+                        </div>
+                        <span class="text">Javascript</span>
+                    </div>
+
+                    <div class="container-row" id="9">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="90">0%</span>
+                        </div>
+                        <span class="text">OOP</span>
+                    </div>
+
+                    <div class="container-row" id="10">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="65">0%</span>
+                        </div>
+                        <span class="text">Spring Security</span>
+                    </div>
+
+                    <div class="container-row" id="11">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="80">0%</span>
+                        </div>
+                        <span class="text">Git & Github</span>
+                    </div>
+                    <div class="container-row" id="12">
+                        <div class="circular-progress">
+                            <span class="progress-value" value="40">0%</span>
+                        </div>
+                        <span class="text">C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <div class="container">
+                <h1 class="sub-title">Education and Course work</h1>
+                <div class="eduCard">
+                    <i class="fa-solid fa-code edulogo" style="color: #ff004f;"></i>
+                    <div class="eduInfo">
+                        <p class="clgName">AccioJobs</p>
+                        <p class="clgInfo">Java Full-stack web development</p>
+                    </div>
+                    <p class="dates">Persuing</p>
+                </div> 
+                <div class="eduCard">
+                    <i class="fa-solid fa-graduation-cap edulogo" style="color: #ff004f;"></i>
+                    <div class="eduInfo">
+                        <p class="clgName">AISSM's IOIT, Pune</p>
+                        <p class="clgInfo">Bechalor's Of Engineering (E&TC)</p>
+                    </div>
+                    <p class="dates">Aug-2022</p>
+                </div>
+                <div class="eduCard">
+                    <i class="fa-solid fa-scroll edulogo" style="color: #ff004f;"></i>
+                    <div class="eduInfo">
+                        <p class="clgName">GP, Nashik</p>
+                        <p class="clgInfo">Diploma in Electronics Engineering</p>
+                    </div>
+                    <p class="dates">Aug-2019</p>
+                </div>
+                <div class="eduCard">
+                    <i class="fa-solid fa-school edulogo" style="color: #ff004f;"></i>
+                    <div class="eduInfo">
+                        <p class="clgName">L.P.D.P Maratha English  School,Satana</p>
+                        <p class="clgInfo">SSC</p>
+                    </div>
+                    <p class="dates">July-2016</p>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------CONTACT ME----------------------------------->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane" style="color: #ff004f;"></i> prateek7120@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone" style="color: #ff004f;"></i> +91-7028230983</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/Prateek0712"><i class="fa-brands fa-github" ></i></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" ></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" ></i></a>
+                        <a href="#"><i class="fa-solid fa-a" ></i></a>
+                    </div>
+                    <a href="./ImagesPratik_Resume_feb_ (1).pf" download><button class="btn-2">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Phone" placeholder="Your phone  number"  required>
+                        <textarea name="Message" placeholder="Your Message" rows="6" ></textarea>
+                        <button type="submit" class="btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="copyright" >
+            <p>Made with <i class="fa-solid fa-heart" style="color: #ff004f;"></i> by Pratik Jadhav</p>
+        </div>
+       <!--------------------------------------------  JS Scripting ---------------------------------------->
+       <script>
+        function toggleMenu() {
+            var sideMenu = document.getElementById("sidemenu");
+            if (sideMenu.style.right === "0px") {
+                sideMenu.style.right = "-200px"; // Hide side menu
+            } else {
+                sideMenu.style.right = "0px"; // Display side menu
+            }
+        }
+
+        function closeMenu() {
+            var sideMenu = document.getElementById("sidemenu");
+            sideMenu.style.right = "-200px"; // Hide side menu
+        }
+    </script>
+    <script src="./script.js"></script>
+    </body>
+</html>

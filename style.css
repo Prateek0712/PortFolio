@@ -1,0 +1,446 @@
+*{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px 50px;
+}
+/* <--------------HEADER SECTION STARTS---------------------------------> */
+.header{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./Images/PortfolioBg.jpg);
+}
+.header .container{
+    background-color: transparent;
+}
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 140px;
+    margin-left: 30px;
+}
+.nav-link, .nav-links, a,i{
+    background-color: transparent;
+}
+.nav-link{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.nav-link a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.nav-link a:hover::after {
+    width: 100%;
+}
+.header-text{
+    color: #fff;
+    /*border: 1px solid white;*/
+    margin-top: 15%;
+    font-size: 30px;
+    background-color: transparent;
+}
+.header-text p, .header-text h1 {
+    background-color: transparent; /* Ensure transparent background */
+}
+.header-text h1{
+    font-size:60px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.header-text h1 span{
+    color:#ff004f;
+    margin-left: 0px;
+    background-color: transparent;
+}
+/* <--------------HEADER SECTION ENDS---------------------------------> */
+/* <--------------ABOUT SECTION STARTS---------------------------------> */
+#aboutMe{
+    padding:65px 0px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 27%; /*width  of col will 35% to  the parent*/
+}
+.about-col-1 img{
+    width: 100%;
+    border: 2px solid #ff004f;
+    border-radius: 15px; 
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.about-col-2 p{
+    font-size: 18px;
+}
+.about-col-1 {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps around the image */
+}
+
+/* Initial border settings */
+.about-col-1 .User {
+    border: 3px solid transparent; /* Transparent border */
+    border: 2px solid #ff004f;
+    border-radius: 10px; /* Adjust border radius */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Border settings on hover */
+.about-col-1:hover .User {
+    border-color: #ff004f; /* Change border color on hover */
+    box-shadow: 0 0 10px 3px #ff004f; /* Glow effect with the desired color */
+}
+.personal{
+    font-size: 20px;
+    background-color: #e44678;
+}
+/* <--------------ABOUT SECTION END---------------------------------> */
+/* <--------------PROJECT SECTION STARTS---------------------------------> */
+#project{
+    padding: 10px 0px;
+}
+.project-list{
+    display: grid;
+    grid-template-areas: "a b c d";
+    margin-top: 30px;
+    gap: 30px;
+}
+.proj{
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    position:relative;
+    overflow: hidden;
+}
+.proj img{
+    border-radius: 10px;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+.layer h3, p, a{
+    background-color: transparent;
+}
+.proj img:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+.proj:hover .layer{
+    height: 100%;
+}
+/* CSS */
+.button-30 {
+    margin-top: 10px;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  height: 38px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 15px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* <--------------PROJECT SECTION ENDS---------------------------------> */
+/* <--------------Education SECTION Start---------------------------------> */
+#education{
+    margin: 60px 0px 10px 0px;
+}
+.eduCard{
+    display: flex;
+    /*gap: 250px;*/
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+.edulogo {
+    font-size: 30px;
+}
+.eduInfo{
+    width: 200px;
+}
+.clgName{
+    font-size: 20px;
+}
+.clgInfo, .dates{
+    color:wheat
+}
+/* <--------------Education SECTION ENDS---------------------------------> */
+/* <--------------CONTACT SECTION STARTS---------------------------------> */
+
+#contact{
+    padding:15px 0px;
+    color: #ababab;
+}
+.contact-left{
+    flex-basis: 27%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 20px;
+}
+.contact-left p i{
+    font-size: 25px;
+} 
+.social-icon {
+    margin-top: 35px;
+    margin-left: 0px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.social-icon a i{
+    color: #ababab;
+    transition: transform 0.5s;
+}
+.social-icon a:hover i{
+    color:#ff004f;
+    transform: translateY(-5px);
+}
+.btn-2{
+    margin-top: 40px;
+    padding-top: 3px;
+    width: 170px;
+    height: 35px;
+    border: 1px solid #ff004f;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+.btn-2:hover{
+    background-color: #ff004f;
+}
+.btn-2:active {
+    transform: translateY(2px); /* Move button down by 2 pixels when clicked */
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    background-color: #262626;
+    margin: 15px 0px;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 7px;
+}
+form .btn-2{
+    margin-top: 15px;
+    margin-left: 0px;
+    width: 300px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #262626;
+}
+
+
+
+
+
+/*<--------------------------------- MEDIA QUERIES ---------------------------->*/
+.navbar i{
+    display: none;
+}
+@media screen and (max-width :1120px) {
+    .project-list{
+        grid-template-areas: "a b" "c d";
+        
+    }
+    .proj{
+        margin: auto;
+    }
+    
+}
+@media screen  and (max-width :600px){
+    /* ------------------------- HEADER ------------------------------ */
+    .eduCard{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap:25px;
+        border: 1px solid #ff004f;
+        border-radius: 5px;
+        padding: 10px
+    }
+    .eduCard:hover{
+        border-color: #ff004f; /* Change border color on hover */
+        box-shadow: 0 0 10px 3px #ff004f; /* Glow effect with the desired color */
+    }
+    .header{
+        background-image: url(./Images/PortfolioBgSmall.jpg);
+    }
+    .header-text{
+        margin-top: 60vh;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .navbar i {
+        color: white;
+        display: block;
+        font-size: 25px;
+    }
+    .navbar .nav-links{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px; /* to hide menubar initially*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease;
+    }
+    .navbar .nav-links .nav-link{
+        display: block;
+        margin: 25px;
+    }
+    .navbar .nav-links i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .navbar i{
+        margin-right: 2%;
+    }
+    .logo{
+        width: 140px;
+        margin-left: 10px;
+    }
+    /* <----------------------------------------- About Me ------------------------------------------> */
+    .container .row{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .about-col-1 .User{
+        border: 2px solid #ff004f;
+        transition: border-color 0.5s ease;
+    }
+    .about-col-1:hover .User {
+        box-shadow: 0 0 10px 4px #ff004f; /* Glow effect with the desired color */
+    }
+    /* <--------------------------------------- Projects --------------------------------------------> */
+    .project-list{
+        grid-template-areas: "a" "b" "c";
+        
+    }
+    .proj{
+        border-radius: 10px;
+        width: 60vw;
+        height: 380px;
+        position:relative;
+        overflow: hidden;
+        margin: auto;
+    }
+    /* <---------------------------------------- CONTACT ---------------------------------> */
+    .contact-right{
+        margin-top: 0px;
+    }
+}
